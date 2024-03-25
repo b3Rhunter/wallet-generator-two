@@ -1,0 +1,154 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100svh;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100svh;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em 0;
+  font-size: 1.2em;
+  background-color: #1a1a1a;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 50%;
+  min-width: 350px;
+  height: auto;
+  max-height: 66%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.208);
+  border-radius: 1em;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+  overflow: auto;
+  scrollbar-width: 0px;
+}
+
+.container input {
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.208);
+  border-radius: 50em;
+  padding: 0.75em 1em;
+  width: 200px;
+  outline: none;
+}
+
+.fileInputContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.fileInput {
+  display: none;
+}
+
+.customFileInputButton {
+  width: 200px;
+}
+
+.customFileInputButton:disabled {
+  cursor: default;
+  border: none;
+}
+
+.wallet-info {
+  text-align: left;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
